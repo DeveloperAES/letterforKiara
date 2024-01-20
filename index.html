@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Mono&family=Noto+Serif+JP:wght@200&family=Playfair+Display&family=Rubik+Broken+Fax&family=Single+Day&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gia is Love</title>
+    <link rel="icon" href="https://media1.tenor.com/m/VSxlAnMklw0AAAAC/anime-hug-for-you.gif" type="image/gif">
+
+    <link rel="stylesheet" href="./plugins/styles.css">
+
+    <script defer src="./plugins/script.js"></script>
+</head>
+<body> 
+    <div class="loader">
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+    </div>
+    
+    <div id="popupContainer">
+        <div id="popupContent">
+            <button id="closePopup"></button>
+            <h2>A Little Note</h2>
+            <p id="note">
+                Primero que nada estba indeciso sobre qué música poner, sí una de Morat o la de Taylor Swift - Enchantres, ya que sé que ambos te gustan. Sé que no te dije nada, necesitaba mi espacio para pensar, así que te pido perdón por ello. Bien, no sé por dónde empezar.......No puedo agradecerte por lo bien que me trataste, por ayudarme sin que yo te pidiera ayuda, por ser la mejor pareja que tuve hasta ahora, no puedo describir lo maravilloso que me sentía por tener a una bendición de pareja conmigo, era casi INCREÍBLE, pero por problemas míos y solo míos no pude cuidar y atesorararlos. Puede que sea lo más tonto, pero tenía que alejarme, superar esos problemas porque no quería lastimar a nadie más, porque aún así si tenia tu amor, sé que yo sería como un veneno.  Sé que no fui el mejor amigo, la mejor pareja, sé que muchas veces no pude cuidarte, ni decirte los te quiero que merecías. Soy inamduro para estas cosas y me cuesta expresarme, pero decido no callarme esta vez, no quiero perderte. Te he estado extrañando aunque no parezca, te veo incluso cuando cierro mis ojos, cuando estoy en mis peores fachas, te veo reflejada en mis recuerdos. La mera de arrepentirme más adelante me consume la cabeza. Para mí es complicado poder tener sentimientos por alguien y mucho más expresarlos, pero es así no puedo detenerlos esta vez, quizá llego tarde, quizá no hay nada que pueda hacer, fuiste clara con tus palabras, pero me molesté. ¿Podrías intentar querer a este tonto otra vez?, no prometo ser el mejor de todos, pero prometo intentar ser mejor para ti 💕
+            </p>
+           
+        </div>
+    </div>
+    
+    <button id="musicButton" onclick="initiatePlayback()">🔈</button>
+
+    <div id="heartRateControl">
+        <label for="heartRateSlider">Love-o-meter </label>
+        <input id="heartRateSlider" type="range" min="50" max="700" step="5" value="300" onchange="updateHeartRate()">
+    </div>
+
+    <audio id="bgMusic" loop hidden><source src="./assets/Taylor.mp3" type="audio/mp3"></audio>
+    <audio id="popSound" hidden><source src="./assets/pop.mp3" type="audio/mp3"></audio>
+
+    <div class="click-catcher"></div>
+
+    <header>
+        <h1 class="hero-text"></h1>
+        <p class="quote">Cargando...</p>
+    </header>
+    
+    <canvas id="waterCanvas"></canvas>
+
+    <p class="love">Love - Kiara</p>
+
+</body>
+</html>
